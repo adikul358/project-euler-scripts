@@ -18,7 +18,7 @@ def check_triangle(t):
 
 def extract_cos():
     global coordinates_global
-    tr_file = open("/p102_triangles.txt", 'r')
+    tr_file = open("p102_triangles.txt", 'r')
     for c in tr_file:
         cos = str(c).split(",")
         cos = [tuple([int(cos[0]), int(cos[1])]), tuple([int(cos[2]), int(cos[3])]), tuple([int(cos[4]), int(cos[5])])]

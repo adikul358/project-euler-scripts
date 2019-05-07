@@ -20,8 +20,14 @@ def check_lychrel(n):
     num = n
     for i in range(50):
         v = pro_palin(num)
-        if check_palin(num):
-            break
+        if check_palin(v):
+            return 0
         num = v
     else:
         lychrels.append(n)
+    
+for i in range(10000):
+    check_lychrel(i)
+
+print(lychrels)
+print(len(lychrels))
