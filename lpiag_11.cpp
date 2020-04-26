@@ -30,11 +30,11 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "Row " << i << ": " << grid[i][j] << " * " << grid[i][j+1] << " * " << grid[i][j+2] << " * " << grid[i][j+3] << " = " << product; 
-            cout<< "\n"; 
+            // cout << "Row " << i << ": " << grid[i][j] << " * " << grid[i][j+1] << " * " << grid[i][j+2] << " * " << grid[i][j+3] << " = " << product; 
+            // cout<< "\n"; 
         } 
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
     for (int j = 0; j < 20; j++){ 
         for (int i = 0; i < 17; i++) { 
@@ -42,11 +42,11 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "Column " << j << ": " << grid[i][j] << " * " << grid[i+1][j] << " * " << grid[i+2][j] << " * " << grid[i+3][j] << " = " << product; 
-            cout<< "\n"; 
+            // cout << "Column " << j << ": " << grid[i][j] << " * " << grid[i+1][j] << " * " << grid[i+2][j] << " * " << grid[i+3][j] << " = " << product; 
+            // cout<< "\n"; 
         } 
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
     int d_counter = 0;
     for (int i = 0; i < 20; i++) { 
@@ -57,14 +57,14 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "South East Diagonal " << d_counter << ": " << grid[temp_i][j] << "[" << i << "][" << j << "]" << " * " << grid[temp_i+1][j+1] << "[" << i+1 << "][" << j+1 << "]" << " * " << grid[temp_i+2][j+2] << "[" << i+2 << "][" << j+2 << "]" << " * " << grid[temp_i+3][j+3] << "[" << i+3 << "][" << j+3 << "]" << " = " << product; 
-            cout<< "\n"; 
+            // cout << "South East Diagonal " << d_counter << ": " << grid[temp_i][j] << "[" << i << "][" << j << "]" << " * " << grid[temp_i+1][j+1] << "[" << i+1 << "][" << j+1 << "]" << " * " << grid[temp_i+2][j+2] << "[" << i+2 << "][" << j+2 << "]" << " * " << grid[temp_i+3][j+3] << "[" << i+3 << "][" << j+3 << "]" << " = " << product; 
+            // cout<< "\n"; 
             temp_i++;
             j++;
         } 
         d_counter++;
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
     for (int j = 0; j < 20; j++) { 
         int i = 0;
@@ -74,14 +74,14 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "South East Diagonal " << d_counter << ": " << grid[i][temp_j] << "[" << i << "][" << j << "]" << " * " << grid[i+1][temp_j+1] << "[" << i+1 << "][" << j+1 << "]" << " * " << grid[i+2][temp_j+2] << "[" << i+2 << "][" << j+2 << "]" << " * " << grid[i+3][temp_j+3] << "[" << i+3 << "][" << j+3 << "]" << " = " << product; 
-            cout<< "\n"; 
+            // cout << "South East Diagonal " << d_counter << ": " << grid[i][temp_j] << "[" << i << "][" << j << "]" << " * " << grid[i+1][temp_j+1] << "[" << i+1 << "][" << j+1 << "]" << " * " << grid[i+2][temp_j+2] << "[" << i+2 << "][" << j+2 << "]" << " * " << grid[i+3][temp_j+3] << "[" << i+3 << "][" << j+3 << "]" << " = " << product; 
+            // cout<< "\n"; 
             i++;
             temp_j++;
         } 
         d_counter++;
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
     d_counter = 0;
     for (int i = 0; i < 20; i++) { 
@@ -92,14 +92,14 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "South West Diagonal " << d_counter << ": " << grid[temp_i][j] << "[" << i << "][" << j << "]" << " * " << grid[temp_i+1][j-1] << "[" << i+1 << "][" << j-1 << "]" << " * " << grid[temp_i+2][j-2] << "[" << i+2 << "][" << j-2 << "]" << " * " << grid[temp_i+3][j-3] << "[" << i+3 << "][" << j-3 << "]" << " = " << product; 
-            cout<< "\n"; 
+            // cout << "South West Diagonal " << d_counter << ": " << grid[temp_i][j] << "[" << i << "][" << j << "]" << " * " << grid[temp_i+1][j-1] << "[" << i+1 << "][" << j-1 << "]" << " * " << grid[temp_i+2][j-2] << "[" << i+2 << "][" << j-2 << "]" << " * " << grid[temp_i+3][j-3] << "[" << i+3 << "][" << j-3 << "]" << " = " << product; 
+            // cout<< "\n"; 
             temp_i++;
             j--;
         } 
         d_counter++;
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
     for (int j = 19; j >= 0; j--) { 
         int i = 0;
@@ -109,19 +109,19 @@ int main() {
             if (product > productLargest) {
                 productLargest = product;
             }
-            cout << "South West Diagonal " << d_counter << ": " << grid[i][temp_j] << "[" << i << "][" << j << "]" << " * " << grid[i+1][temp_j-1] << "[" << i+1 << "][" << j-1 << "]" << " * " << grid[i+2][temp_j-2] << "[" << i+2 << "][" << j-2 << "]" << " * " << grid[i+3][temp_j-3] << "[" << i+3 << "][" << j-3 << "]" << " = " << product; 
-            cout<< "\n"; 
+            // cout << "South West Diagonal " << d_counter << ": " << grid[i][temp_j] << "[" << i << "][" << j << "]" << " * " << grid[i+1][temp_j-1] << "[" << i+1 << "][" << j-1 << "]" << " * " << grid[i+2][temp_j-2] << "[" << i+2 << "][" << j-2 << "]" << " * " << grid[i+3][temp_j-3] << "[" << i+3 << "][" << j-3 << "]" << " = " << product; 
+            // cout<< "\n"; 
             i++;
             temp_j--;
         } 
         d_counter++;
-        cout<< "\n"; 
-        cout<< "\n"; 
+        // cout<< "\n"; 
+        // cout<< "\n"; 
     } 
 
 
 
 
-    cout << "Largest Product = " << productLargest;
+    cout << productLargest;
 
 }
