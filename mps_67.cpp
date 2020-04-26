@@ -13,11 +13,11 @@ int main() {
     int productLargest = 0;
     int a;
     string x;
-    vector<vector<int>> inputTriangle(15, vector<int>(15, 0));
+    vector<vector<int>> inputTriangle(100, vector<int>(100, 0));
     int m = 0;
     int n = 0;
 
-    triangleFile.open("mps_18_1.txt");
+    triangleFile.open("mps_67_1.txt");
     if (!triangleFile) {
         cerr << "Unable to open file";
         exit(1);
