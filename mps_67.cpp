@@ -14,7 +14,7 @@ int main() {
     int a;
     string x;
     vector<vector<int>> inputTriangle(100, vector<int>(100, 0));
-    int m = 0;
+    int m = 0
     int n = 0;
 
     triangleFile.open("mps_67_1.txt");
