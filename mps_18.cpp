@@ -17,7 +17,7 @@ int main() {
     int m = 0;
     int n = 0;
 
-    triangleFile.open("mps_18_1.txt");
+    triangleFile.open("mps_18.txt");
     if (!triangleFile) {
         cerr << "Unable to open file";
         exit(1);
