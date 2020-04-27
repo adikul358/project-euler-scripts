@@ -12,7 +12,7 @@ int main() {
     int x;
     vector<vector<int>> grid(20, vector<int>(20, 0));
 
-    gridFile.open("lpiag_11.txt");
+    gridFile.open("11_lpiag.txt");
     if (!gridFile) {
         cerr << "Unable to open file";
         exit(1);
