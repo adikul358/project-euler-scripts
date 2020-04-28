@@ -45,4 +45,31 @@ bool isPrime(int n, vector<int> primes) {
     return false;
 }
 
-int main() {}
+int main() {
+    int aMax = 0, bMax = 0, nMax = 0;
+    vector<int> primes = ESieve(87400);
+    vector<int> bPos = ESieve(1000);
+
+    for (int a = -999; a < 1001; a +=2) {
+        for (int i = 1; i < bPos.size(); i++) {
+            for (int j = 0; j < 2; j++) {
+                int n = 0;
+                int sign = (j == 0) ? 1 : -1; 
+                int aodd = (i % 2 == 0) ? -1 : 0;
+                while (isPrime(abs(n * n + (a + aodd) * n + sign*bPos[i]), primes)) {
+                    n++;
+                } 
+
+
+                if (n > nMax) {
+                    printf("Sequence length %d: a = %d, b = %d\n", n, a + aodd, sign*bPos[i]);
+                    aMax = a;
+                    bMax = bPos[i];
+                    nMax = n;
+                }
+            }
+        }
+    }
+    printf("Max Sequence length %d: a = %d, b = %d\n", nMax, aMax, bMax);
+    printf("Product: %d", aMax*bMax);
+}
